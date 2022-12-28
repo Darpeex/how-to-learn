@@ -18,6 +18,7 @@
   max-height: 756px;
   position: relative;
   /* выше установили ограничения для секции */
+  overflow: hidden;
 }
 
 .header_background {
@@ -32,13 +33,13 @@
 
 .logo_place_header {
   position: absolute;
+  margin: 0;
   top: 30px;
   left: 64px;
   z-index: 2;
 }
 
 .header__title {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +73,6 @@
   width: 765px;
   height: 608px;
   background-image: url(../images/header-image.png);
-  alt: "Здесь должна быть крутая картинка";
   background-size: cover;
   z-index: 1;
 }
@@ -292,6 +292,70 @@
 
 
 .footer {
-  min-height: 350px;
+  background-color: #1f1f1f;
   padding: 60px 0 40px;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+.footer__columns {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer__columns_color-white {
+  color: white;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  box-sizing: border-box;    /* Может как-то иначе нужно, но в теории, так тоже правильно, хоть и мудрено, если не так, подскажите, пожалуйста  */
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-link {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__column-links, .footer__social-icon {
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer__social-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
