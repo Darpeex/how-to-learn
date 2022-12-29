@@ -9,7 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 /* Шапка сайта */
 
 .header {
@@ -20,7 +19,7 @@
   /* выше установили ограничения для секции */
 }
 
-.header__backround {
+.header_backround {
   background-color: #f2f2f2;
 }
 
@@ -63,6 +62,7 @@
 }
 
 .header__link {
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -87,10 +87,7 @@
   top: 64px;
 }
 
-
 /* Секция, блок description */
-
-
 
 .description {
   padding-top: 100px;
@@ -133,11 +130,9 @@
   font-weight: 600;
 }
 
-
 /* Секция, блок digits */
 
-
-.digits_position {
+.digits {
   padding: 100px 0;
 }
 
@@ -147,20 +142,16 @@
   text-align: center;
 }
 
+.section-title_text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
 .section-subtitle {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-}
-
-.section-subtitle:last-child {
-  margin: 0 auto;
-}
-
-.section-title__text {
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
 }
 
 .section-subtitle_text {
@@ -172,6 +163,7 @@
 .table {
   width: 1100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
@@ -197,12 +189,10 @@
   font-weight: normal;
 }
 
-
 /* Секция, блок feynman */
 
-
 .feyman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -226,7 +216,7 @@
   text-align: center;
   line-height: 51px;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .feyman__link {
@@ -241,9 +231,7 @@
   text-decoration: none;
 }
 
-
 /* Секция, блок kaufman */
-
 
 .kaufman {
   padding: 90px 0;
@@ -251,10 +239,8 @@
   background-color: #1f1f1f;
   overflow: hidden;
   z-index: 0;
-}
-
-.kaufman_position_white-text {
   color: white;
+  box-sizing: border-box;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -264,16 +250,6 @@
   margin-top: 80px;
 }
 
-/* Можно удалить, но оставляю, на случай, если так для блока нельзя обозначать цвет, чтобы не переписывать */
-
-/* .table__heading_theme_dark {
-
-}
-
-.table__text_theme_dark {
-
-} */
-
 .kaufman__tringle {
   position: absolute;
   top: 0;
@@ -281,11 +257,13 @@
   width: 877px;
   height: 877px;
   z-index: -1;
+  /* При помощи фона */
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-
 /* Подвал сайта, блок footer */
-
 
 .footer {
   background-color: #1f1f1f;
@@ -301,9 +279,6 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 90%;
-}
-
-.footer__columns_color-white {
   color: white;
 }
 
