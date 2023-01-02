@@ -17,9 +17,6 @@
   max-height: 756px;
   position: relative;
   /* выше установили ограничения для секции */
-}
-
-.header_backround {
   background-color: #f2f2f2;
 }
 
@@ -49,9 +46,11 @@
   font-weight: 600;
   height: 100%;
   z-index: 2;
+   position: relative; /* 1 - Добавил */
 }
 
 .header__subtitle {
+  margin: 0; /* 2 - Сбросил */
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -143,7 +142,7 @@
   text-align: center;
 }
 
-.section-title_text {
+.section-title_text_style {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -155,7 +154,7 @@
   text-align: center;
 }
 
-.section-subtitle_text {
+.section-subtitle_text_style {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
