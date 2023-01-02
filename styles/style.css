@@ -46,7 +46,7 @@
   font-weight: 600;
   height: 100%;
   z-index: 2;
-   position: relative; /* 1 - Добавил */
+  position: relative; /* 1 - Добавил */
 }
 
 .header__subtitle {
