@@ -1,0 +1,83 @@
+/* Шапка сайта */
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  overflow: hidden;
+  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+}
+
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  margin: 0;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
+}
+
+.header__title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  height: 100%;
+  z-index: 2;
+  position: relative; /* 1 - Добавил */
+}
+
+.header__subtitle {
+  margin: 0; /* 2 - Сбросил */
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+  transition: all 0.15s;
+}
+
+.header__main-illustrator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+  background-image: url(../images/header-image.png);
+  background-size: cover;
+  z-index: 1;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+}

@@ -1,0 +1,52 @@
+/* Safari, Chrome, Opera 15+ и другие браузеры на основе движка WebKit или Blink. */
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Firefox и браузеры на движке Gecko. */
+@-moz-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Opera 12 и раньше, на движке Presto. */
+@-o-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Internet Explorer и старый Microsoft Edge 12–18. */
+@-ms-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
