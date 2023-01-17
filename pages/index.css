@@ -92,11 +92,11 @@
 @import url(../blocks/techniques/techniques.css);
 
 /* blocks/two-columns */
-@import url(../blocks/two_columns/two-columns.css);
-@import url(../blocks/two_columns/__brief/two-columns__brief.css);
-@import url(../blocks/two_columns/__main/two-columns__main-text.css);
-@import url(../blocks/two_columns/__paragraph/two-columns__paragraph.css);
-@import url(../blocks/two_columns/__span/two-columns__span-accent.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/two-columns/__span/two-columns__span-accent.css);
 
 /* blocks/videos */
 @import url(../blocks/video/video.css);
