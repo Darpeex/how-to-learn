@@ -1,0 +1,12 @@
+/* Секция, блок kaufman */
+
+.kaufman {
+  padding: 90px 0;
+  position: relative;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  z-index: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
