@@ -73,6 +73,7 @@
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/resources/__link/resources__link.css);
 @import url(../blocks/resources/__logo/resources__logo-zone.css);
+@import url(../blocks/resources/__image/resources__image.css);
 
 /* blocks/section-subtitle */
 @import url(../blocks/section-subtitle/section-subtitle.css);
