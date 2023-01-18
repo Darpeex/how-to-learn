@@ -1,14 +1,10 @@
 .header__title {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 730px;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  height: 100%;
   z-index: 2;
   position: relative; /* 1 - Добавил */
 }
